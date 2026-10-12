@@ -20,6 +20,7 @@ namespace BlastFurnaceFix
         static Dictionary<string, ItemDrop> metals = new Dictionary<string, ItemDrop>
         {
             { "$item_copperore", null },
+            { "$item_copperscrap", null },
             { "$item_copper", null },
             { "$item_ironscrap", null },
             { "$item_iron", null },
@@ -61,6 +62,7 @@ namespace BlastFurnaceFix
             List<Smelter.ItemConversion> conversions = new List<Smelter.ItemConversion>()
             {
                 new Smelter.ItemConversion{ m_from = BFFix.metals["$item_copperore"], m_to = BFFix.metals["$item_copper"]},
+                new Smelter.ItemConversion{ m_from = BFFix.metals["$item_copperscrap"], m_to = BFFix.metals["$item_copper"]},
                 new Smelter.ItemConversion{ m_from = BFFix.metals["$item_tinore"], m_to = BFFix.metals["$item_tin"]},
                 new Smelter.ItemConversion{ m_from = BFFix.metals["$item_ironscrap"], m_to = BFFix.metals["$item_iron"]},
                 new Smelter.ItemConversion{ m_from = BFFix.metals["$item_silverore"], m_to = BFFix.metals["$item_silver"]}

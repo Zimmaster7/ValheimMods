@@ -22,7 +22,10 @@ namespace BlastFurnaceFix
             { "$item_copperore", null },
             { "$item_copperscrap", null },
             { "$item_copper", null },
+            { "$item_bronzescrap", null },
+			{ "$item_bronze", null },
             { "$item_ironscrap", null },
+			{ "$item_ironore", null },
             { "$item_iron", null },
             { "$item_tinore", null },
             { "$item_tin", null },
@@ -63,8 +66,10 @@ namespace BlastFurnaceFix
             {
                 new Smelter.ItemConversion{ m_from = BFFix.metals["$item_copperore"], m_to = BFFix.metals["$item_copper"]},
                 new Smelter.ItemConversion{ m_from = BFFix.metals["$item_copperscrap"], m_to = BFFix.metals["$item_copper"]},
+                new Smelter.ItemConversion{ m_from = BFFix.metals["$item_bronzescrap"], m_to = BFFix.metals["$item_bronze"]},
                 new Smelter.ItemConversion{ m_from = BFFix.metals["$item_tinore"], m_to = BFFix.metals["$item_tin"]},
                 new Smelter.ItemConversion{ m_from = BFFix.metals["$item_ironscrap"], m_to = BFFix.metals["$item_iron"]},
+                new Smelter.ItemConversion{ m_from = BFFix.metals["$item_ironore"], m_to = BFFix.metals["$item_iron"]},
                 new Smelter.ItemConversion{ m_from = BFFix.metals["$item_silverore"], m_to = BFFix.metals["$item_silver"]}
             };
 
